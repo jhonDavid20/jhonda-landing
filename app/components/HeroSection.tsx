@@ -22,7 +22,7 @@ export default function HeroSection() {
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
     return (
-        <section ref={sectionRef} className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-8">
+        <section ref={sectionRef} className="relative min-h-[100dvh] flex flex-col items-center justify-center px-4 sm:px-6 md:px-8">
             <motion.div
                 style={{ y: imageY, opacity }}
                 className="flex flex-col items-center gap-6 sm:gap-8"

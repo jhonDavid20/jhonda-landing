@@ -46,7 +46,7 @@ export default function AboutSection() {
     }, [])
 
     return (
-        <section ref={sectionRef} className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
+        <section ref={sectionRef} className="relative min-h-[100dvh] flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
             <div className="max-w-3xl w-full">
                 <motion.h2
                     style={{ y: titleY }}
