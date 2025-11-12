@@ -13,7 +13,6 @@ body {
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    scroll-snap-type: y proximity;
 }
 
 body {
@@ -21,9 +20,16 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-section {
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
+/* Scroll snap only on desktop/tablet, not mobile */
+@media (min-width: 768px) {
+    html {
+        scroll-snap-type: y proximity;
+    }
+
+    section {
+        scroll-snap-align: start;
+        scroll-snap-stop: normal;
+    }
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
