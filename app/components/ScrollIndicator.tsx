@@ -37,7 +37,7 @@ export default function ScrollIndicator() {
     }
 
     return (
-        <div className="hidden sm:flex fixed left-6 top-1/2 -translate-y-1/2 z-40 flex-col gap-4">
+        <div className="fixed left-3 sm:left-6 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-3 sm:gap-4">
             {[0, 1].map((index) => (
                 <motion.button
                     key={index}
@@ -48,7 +48,7 @@ export default function ScrollIndicator() {
                     aria-label={index === 0 ? 'Go to Hero section' : 'Go to About section'}
                 >
                     <div
-                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
                             activeSection === index
                                 ? 'bg-white scale-100'
                                 : 'bg-gray-500 scale-75 group-hover:bg-gray-400'

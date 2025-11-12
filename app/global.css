@@ -13,11 +13,17 @@ body {
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-snap-type: y proximity;
 }
 
 body {
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
