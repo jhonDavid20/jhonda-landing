@@ -19,10 +19,10 @@ export default function AboutSection() {
         offset: ["start end", "end start"]
     })
 
-    // Parallax transformations
-    const titleY = useTransform(scrollYProgress, [0, 1], [100, -100])
-    const contentY = useTransform(scrollYProgress, [0, 1], [150, -50])
-    const buttonsY = useTransform(scrollYProgress, [0, 1], [200, -100])
+    // Parallax transformations - subtle and smooth
+    const titleY = useTransform(scrollYProgress, [0, 1], [50, -50])
+    const contentY = useTransform(scrollYProgress, [0, 1], [60, -20])
+    const buttonsY = useTransform(scrollYProgress, [0, 1], [70, -30])
 
     useEffect(() => {
         const observer = new IntersectionObserver(

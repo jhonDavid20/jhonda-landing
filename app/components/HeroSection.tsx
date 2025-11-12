@@ -16,10 +16,10 @@ export default function HeroSection() {
         offset: ["start start", "end start"]
     })
 
-    // Parallax transformations
-    const imageY = useTransform(scrollYProgress, [0, 1], [0, 200])
-    const textY = useTransform(scrollYProgress, [0, 1], [0, 300])
-    const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+    // Parallax transformations - subtle and smooth
+    const imageY = useTransform(scrollYProgress, [0, 1], [0, 50])
+    const textY = useTransform(scrollYProgress, [0, 1], [0, 80])
+    const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0])
 
     return (
         <section ref={sectionRef} className="relative min-h-[100dvh] flex flex-col items-center justify-center px-4 sm:px-6 md:px-8">
