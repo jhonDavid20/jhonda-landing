@@ -37,7 +37,7 @@ export default function ScrollIndicator() {
     }
 
     return (
-        <div className="fixed left-6 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-4">
+        <div className="hidden sm:flex fixed left-6 top-1/2 -translate-y-1/2 z-40 flex-col gap-4">
             {[0, 1].map((index) => (
                 <motion.button
                     key={index}

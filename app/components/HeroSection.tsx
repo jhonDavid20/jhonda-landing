@@ -22,10 +22,10 @@ export default function HeroSection() {
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
     return (
-        <section ref={sectionRef} className="min-h-screen flex flex-col items-center justify-center px-4 relative">
+        <section ref={sectionRef} className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-8">
             <motion.div
                 style={{ y: imageY, opacity }}
-                className="flex flex-col items-center gap-8"
+                className="flex flex-col items-center gap-6 sm:gap-8"
             >
                 {/* Avatar Image */}
                 {/* <motion.div
@@ -48,10 +48,10 @@ export default function HeroSection() {
                     className="text-center max-w-2xl"
                     style={{ y: textY }}
                 >
-                    <h1 className="text-5xl md:text-6xl font-bold mb-4">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4">
                         {language === 'en' ? "I'm" : "Soy"} <span className="text-white">{t.name}</span>
                     </h1>
-                    <p className="text-xl text-red-500 italic mb-4">
+                    <p className="text-lg sm:text-xl text-red-500 italic mb-3 sm:mb-4 px-4 sm:px-0">
                         {t.title}{' '}
                         <a
                             href="https://clutchdevs.com"
@@ -62,7 +62,7 @@ export default function HeroSection() {
                             {t.company}
                         </a>
                     </p>
-                    <p className="text-gray-300 text-lg">
+                    <p className="text-gray-300 text-base sm:text-lg px-4 sm:px-0">
                         {t.tagline}
                     </p>
                 </motion.div>

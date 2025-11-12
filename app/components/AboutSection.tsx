@@ -46,28 +46,28 @@ export default function AboutSection() {
     }, [])
 
     return (
-        <section ref={sectionRef} className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
-            <div className="max-w-3xl">
+        <section ref={sectionRef} className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
+            <div className="max-w-3xl w-full">
                 <motion.h2
                     style={{ y: titleY }}
-                    className={`text-4xl md:text-5xl font-bold text-center mb-12 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[100ms]' : 'opacity-0 translate-y-4'}`}
+                    className={`text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[100ms]' : 'opacity-0 translate-y-4'}`}
                 >
                     {t.title}
                 </motion.h2>
 
                 <motion.div
                     style={{ y: contentY }}
-                    className="space-y-6 text-gray-300 text-center leading-relaxed"
+                    className="space-y-4 sm:space-y-6 text-gray-300 text-center leading-relaxed"
                 >
-                    <p className={`transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[200ms]' : 'opacity-0 translate-y-4'}`}>
+                    <p className={`text-sm sm:text-base md:text-lg transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[200ms]' : 'opacity-0 translate-y-4'}`}>
                         {t.paragraph1}
                     </p>
 
-                    <p className={`transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[300ms]' : 'opacity-0 translate-y-4'}`}>
+                    <p className={`text-sm sm:text-base md:text-lg transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[300ms]' : 'opacity-0 translate-y-4'}`}>
                         {t.paragraph2}
                     </p>
 
-                    <p className={`transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[400ms]' : 'opacity-0 translate-y-4'}`}>
+                    <p className={`text-sm sm:text-base md:text-lg transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[400ms]' : 'opacity-0 translate-y-4'}`}>
                         {t.paragraph3}{' '}
                         <a
                             href="https://clutchdevs.com"
@@ -80,7 +80,7 @@ export default function AboutSection() {
                         {t.paragraph3After}
                     </p>
 
-                    <p className={`transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[500ms]' : 'opacity-0 translate-y-4'}`}>
+                    <p className={`text-sm sm:text-base md:text-lg transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[500ms]' : 'opacity-0 translate-y-4'}`}>
                         {t.paragraph4}
                     </p>
                 </motion.div>
@@ -88,41 +88,41 @@ export default function AboutSection() {
                 {/* Contact Buttons */}
                 <motion.div
                     style={{ y: buttonsY }}
-                    className={`flex flex-wrap justify-center gap-6 mt-16 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[600ms]' : 'opacity-0 translate-y-4'}`}
+                    className={`flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 mt-12 sm:mt-14 md:mt-16 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[600ms]' : 'opacity-0 translate-y-4'}`}
                 >
                     <a
                         href="mailto:jhonps396@gmail.com"
-                        className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg flex items-center gap-3 transition-colors"
+                        className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg flex items-center justify-center gap-3 transition-colors"
                     >
-                        <Mail size={24} />
-                        <span className="text-lg font-medium">{btn.email}</span>
+                        <Mail size={20} className="sm:w-6 sm:h-6" />
+                        <span className="text-base sm:text-lg font-medium">{btn.email}</span>
                     </a>
 
                     <a
                         href="https://github.com/jhonDavid20"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-4 rounded-lg flex items-center gap-3 transition-colors"
+                        className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg flex items-center justify-center gap-3 transition-colors"
                     >
-                        <Github size={24} />
-                        <span className="text-lg font-medium">{btn.github}</span>
+                        <Github size={20} className="sm:w-6 sm:h-6" />
+                        <span className="text-base sm:text-lg font-medium">{btn.github}</span>
                     </a>
 
                     <a
                         href="https://www.linkedin.com/in/jhondavidbp/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-4 rounded-lg flex items-center gap-3 transition-colors"
+                        className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg flex items-center justify-center gap-3 transition-colors"
                     >
-                        <Linkedin size={24} />
-                        <span className="text-lg font-medium">{btn.linkedin}</span>
+                        <Linkedin size={20} className="sm:w-6 sm:h-6" />
+                        <span className="text-base sm:text-lg font-medium">{btn.linkedin}</span>
                     </a>
                 </motion.div>
 
                 {/* Footer */}
                 <motion.footer
                     style={{ y: buttonsY }}
-                    className={`mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[700ms]' : 'opacity-0 translate-y-4'}`}
+                    className={`mt-12 sm:mt-14 md:mt-16 pt-6 sm:pt-8 border-t border-gray-800 text-center text-gray-500 text-xs sm:text-sm transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[700ms]' : 'opacity-0 translate-y-4'}`}
                 >
                     <p>{footer}</p>
                 </motion.footer>
