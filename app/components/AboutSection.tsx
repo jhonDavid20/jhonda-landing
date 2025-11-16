@@ -12,7 +12,6 @@ export default function AboutSection() {
     const { language } = useLanguage()
     const t = translations[language].about
     const btn = translations[language].buttons
-    const footer = translations[language].footer
 
     const { scrollYProgress } = useScroll({
         target: sectionRef,
@@ -118,14 +117,6 @@ export default function AboutSection() {
                         <span className="text-base sm:text-lg font-medium">{btn.linkedin}</span>
                     </a>
                 </motion.div>
-
-                {/* Footer */}
-                <motion.footer
-                    style={{ y: buttonsY }}
-                    className={`mt-12 sm:mt-14 md:mt-16 pt-6 sm:pt-8 border-t border-gray-800 text-center text-gray-500 text-xs sm:text-sm transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 delay-[700ms]' : 'opacity-0 translate-y-4'}`}
-                >
-                    <p>{footer}</p>
-                </motion.footer>
             </div>
         </section>
     )

@@ -36,16 +36,18 @@ export default function ScrollIndicator() {
         sections[index]?.scrollIntoView({ behavior: 'smooth' })
     }
 
+    const sectionLabels = ['Go to Hero section', 'Go to About section', 'Go to Projects section']
+
     return (
         <div className="fixed left-3 sm:left-6 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-3 sm:gap-4">
-            {[0, 1].map((index) => (
+            {[0, 1, 2].map((index) => (
                 <motion.button
                     key={index}
                     onClick={() => scrollToSection(index)}
                     className="group relative"
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
-                    aria-label={index === 0 ? 'Go to Hero section' : 'Go to About section'}
+                    aria-label={sectionLabels[index]}
                 >
                     <div
                         className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${

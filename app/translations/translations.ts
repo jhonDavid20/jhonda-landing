@@ -19,6 +19,14 @@ export const translations = {
             github: "GitHub",
             linkedin: "LinkedIn"
         },
+        projects: {
+            title: "Featured Projects",
+            clickToExpand: "Click to expand",
+            viewCode: "View Code",
+            liveDemo: "Live Demo",
+            techStack: "Tech Stack",
+            keyFeatures: "Key Features"
+        },
         footer: "© 2025. Built with love."
     },
     es: {
@@ -40,6 +48,14 @@ export const translations = {
             email: "Enviar Email",
             github: "GitHub",
             linkedin: "LinkedIn"
+        },
+        projects: {
+            title: "Proyectos Destacados",
+            clickToExpand: "Click para expandir",
+            viewCode: "Ver Código",
+            liveDemo: "Demo en Vivo",
+            techStack: "Tecnologías",
+            keyFeatures: "Características Principales"
         },
         footer: "© 2025. Hecho con amor."
     }
