@@ -24,7 +24,7 @@ export default function CVDownloadButton() {
     return (
         <div className="group flex-shrink-0 p-3 -m-3">
             <motion.a
-                href="/jhonCV.pdf"
+                href="/jhonResume.pdf"
                 download
                 className="h-12 sm:h-14 rounded-full bg-gray-800/70 backdrop-blur-md group-hover:bg-gray-700/80 shadow-xl flex items-center justify-center transition-all duration-300 overflow-hidden w-12 sm:w-14 group-hover:w-auto group-hover:px-4"
                 whileTap={{ scale: 0.9 }}
