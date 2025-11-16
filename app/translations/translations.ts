@@ -17,7 +17,8 @@ export const translations = {
         buttons: {
             email: "Email Me",
             github: "GitHub",
-            linkedin: "LinkedIn"
+            linkedin: "LinkedIn",
+            downloadCV: "Download my CV"
         },
         projects: {
             title: "Featured Projects",
@@ -47,7 +48,8 @@ export const translations = {
         buttons: {
             email: "Enviar Email",
             github: "GitHub",
-            linkedin: "LinkedIn"
+            linkedin: "LinkedIn",
+            downloadCV: "Descargar mi CV"
         },
         projects: {
             title: "Proyectos Destacados",

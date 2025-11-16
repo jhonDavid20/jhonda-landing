@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './global.css'
 import { LanguageProvider } from './contexts/LanguageContext'
-import LanguageToggle from './components/LanguageToggle'
+import Header from './components/Header'
 import ScrollIndicator from './components/ScrollIndicator'
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
         <html lang="en">
         <body>
         <LanguageProvider>
-            <LanguageToggle />
+            <Header />
             <ScrollIndicator />
             {children}
         </LanguageProvider>

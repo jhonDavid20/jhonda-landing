@@ -26,7 +26,7 @@ export default function LanguageToggle() {
 
     if (!mounted) {
         return (
-            <button className="fixed top-4 right-4 sm:top-6 sm:left-6 sm:right-auto z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gray-800/70 backdrop-blur-md shadow-xl flex items-center justify-center">
+            <button className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gray-800/70 backdrop-blur-md shadow-xl flex items-center justify-center">
                 <span className="text-xl sm:text-2xl font-bold text-white">EN</span>
             </button>
         )
@@ -35,7 +35,7 @@ export default function LanguageToggle() {
     return (
         <motion.button
             onClick={toggleLanguage}
-            className="fixed top-4 right-4 sm:top-6 sm:left-6 sm:right-auto z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gray-800/70 backdrop-blur-md hover:bg-gray-700/80 shadow-xl flex items-center justify-center transition-all duration-300"
+            className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gray-800/70 backdrop-blur-md hover:bg-gray-700/80 shadow-xl flex items-center justify-center transition-all duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             initial={{ opacity: 0, x: -20 }}
