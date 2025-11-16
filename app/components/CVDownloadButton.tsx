@@ -12,7 +12,7 @@ export default function CVDownloadButton() {
     if (!mounted) {
         return (
             <a
-                href="/jhonCV.pdf"
+                href="/jhonResume.pdf"
                 download
                 className="flex-shrink-0 h-12 sm:h-14 rounded-full bg-gray-800/70 backdrop-blur-md shadow-xl flex items-center justify-center px-4"
             >
