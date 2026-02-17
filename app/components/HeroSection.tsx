@@ -57,9 +57,10 @@ export default function HeroSection() {
                             href="https://clutchdevs.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:underline"
+                            className="hover:underline inline-flex items-center gap-1"
                         >
                             {t.company}
+                            <img src="/favicon.ico" alt="ClutchDevs logo" className="inline-block w-5 h-5" />
                         </a>
                     </p>
                     <p className="text-gray-300 text-base sm:text-lg px-4 sm:px-0">
