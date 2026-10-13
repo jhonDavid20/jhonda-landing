@@ -71,45 +71,5 @@ Construida con React para la interfaz de usuario, TypeScript para seguridad de t
             github: 'https://github.com/jhonDavid20/steady-vitality',
             live: 'https://coaching-landing-kappa.vercel.app/en'
         }
-    },
-    {
-        id: 'coming-soon',
-        title: {
-            en: 'More Coming Soon',
-            es: 'Más Próximamente'
-        },
-        description: {
-            en: 'Always building, always improving. New projects are in development.',
-            es: 'Siempre construyendo, siempre mejorando. Nuevos proyectos en desarrollo.'
-        },
-        fullDescription: {
-            en: `I'm constantly working on new projects and exploring innovative solutions. Whether it's a new web application, a mobile app, or an experimental tool, I'm always pushing my skills forward.
-
-Stay tuned for upcoming projects that will showcase new technologies, creative solutions, and continued growth as a developer. The best is yet to come.`,
-            es: `Estoy constantemente trabajando en nuevos proyectos y explorando soluciones innovadoras. Ya sea una nueva aplicación web, una app móvil o una herramienta experimental, siempre estoy llevando mis habilidades más allá.
-
-Mantente atento a los próximos proyectos que mostrarán nuevas tecnologías, soluciones creativas y crecimiento continuo como desarrollador. Lo mejor está por venir.`
-        },
-        image: '',
-        imageAlt: {
-            en: 'Coming Soon',
-            es: 'Próximamente'
-        },
-        tags: ['In Progress', 'Innovation', 'Growth'],
-        features: {
-            en: [
-                'New technologies being explored',
-                'Creative problem-solving',
-                'Continuous learning',
-                'Building for the future'
-            ],
-            es: [
-                'Nuevas tecnologías siendo exploradas',
-                'Resolución creativa de problemas',
-                'Aprendizaje continuo',
-                'Construyendo para el futuro'
-            ]
-        },
-        links: {}
     }
 ]

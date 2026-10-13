@@ -12,8 +12,15 @@ A modern, minimalist portfolio landing page showcasing full-stack development sk
 
 ## Sections
 
-1. **Hero Section**: Introduction with professional title and tagline
-2. **About Section**: Professional background, skills, and contact information
+1. **Hero**: value proposition, availability badge, primary CTAs and key stats
+2. **Services**: what I offer (websites, web apps, UI/UX, performance)
+3. **Process**: how a project works, step by step
+4. **Work**: featured case studies
+5. **About**: background and values
+6. **Experience**: timeline and daily tool stack
+7. **Contact**: email, copy-to-clipboard, socials and resume
+
+All copy lives in `app/translations/translations.ts` (EN/ES) and projects in `app/data/projects.ts`.
 
 ## Tech Stack
 
@@ -52,41 +59,6 @@ npm run build
 npm start
 ```
 
-## Project Structure
-
-```
-app/
-├── components/          # React components
-│   ├── HeroSection.tsx
-│   ├── AboutSection.tsx
-│   ├── LanguageToggle.tsx
-│   └── ScrollIndicator.tsx
-├── contexts/           # React Context providers
-│   └── LanguageContext.tsx
-├── translations/       # i18n content
-│   └── translations.ts
-├── layout.tsx          # Root layout
-├── page.tsx           # Home page
-└── global.css         # Global styles
-```
-
-## Features Breakdown
-
-### Language Toggle
-- Persistent preference using localStorage
-- Automatic browser detection for optimal emoji/text display
-- Smooth transitions between languages
-
-### Scroll Animations
-- Parallax effects with different speeds per element
-- Intersection Observer-based fade-in animations
-- Staggered animations for content reveal
-
-### Navigation
-- Two-dot scroll indicator
-- Clickable dots for section navigation
-- Auto-highlighting based on scroll position
-
 ## Contact
 
 - **Email**: jhonps396@gmail.com
@@ -96,4 +68,4 @@ app/
 
 ## License
 
-All rights reserved © 2025 Jhonathan Barrios
+All rights reserved © 2026 Jhonathan Barrios

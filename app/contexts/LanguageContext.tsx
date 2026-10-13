@@ -19,19 +19,29 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
     // Load saved language preference on mount
     useEffect(() => {
-        const savedLanguage = localStorage.getItem('language') as Language
+        let savedLanguage: string | null = null
+        try {
+            savedLanguage = localStorage.getItem('language')
+        } catch {}
         if (savedLanguage === 'en' || savedLanguage === 'es') {
             setLanguageState(savedLanguage)
+        } else if (navigator.language?.toLowerCase().startsWith('es')) {
+            // First visit: follow the browser's language
+            setLanguageState('es')
         }
         setMounted(true)
     }, [])
 
+    useEffect(() => {
+        document.documentElement.lang = language
+    }, [language])
+
     // Save language preference to localStorage
     const setLanguage = (lang: Language) => {
         setLanguageState(lang)
-        if (typeof window !== 'undefined') {
+        try {
             localStorage.setItem('language', lang)
-        }
+        } catch {}
     }
 
     const toggleLanguage = () => {
