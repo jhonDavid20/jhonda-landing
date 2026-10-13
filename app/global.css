@@ -72,3 +72,33 @@ body {
 .animate-slide-up {
     animation: slide-up 300ms ease-out;
 }
+/* Office tour prototype: no snapping while the room is pinned */
+html:has(.office-tour) {
+    scroll-snap-type: none;
+}
+
+/* overflow-x: hidden on html/body breaks position: sticky; clip doesn't */
+html:has(.office-tour),
+html:has(.office-tour) body {
+    overflow-x: clip;
+}
+
+.office-tour .steam path {
+    animation: steam 3.2s ease-in-out infinite;
+}
+
+.office-tour .steam path:nth-child(2) {
+    animation-delay: 1.4s;
+}
+
+@keyframes steam {
+    0% { opacity: 0; transform: translateY(6px); }
+    40% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .office-tour .steam path {
+        animation: none;
+    }
+}
